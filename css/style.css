@@ -1,0 +1,265 @@
+/*resetando o navegador e padronizando o html*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	/*importando fonts*/
+}
+
+/*Padronizando todo o html e o corpo*/
+html,body{
+	height: 100%;
+}
+
+/*dimensionar o container*/
+.container{
+	width: 100%;
+	max-width: 1366px;
+	margin: 0 auto;
+}
+/*limpar a flutuação*/
+.clear{
+	clear: both;
+}
+
+
+/**/
+
+header{
+	background-color: rgb(180, 180, 180);
+	/*padding: 10px 2% 40px 2%;*/
+	padding: 10px 40px;
+}
+.logo-1{
+	margin-left: 30px;
+	float: left;
+	width: 150px;
+	height: 70px;
+	background-image: url('../images/logo1.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+.logo-2{
+	margin-right: 30px;
+	float: right;
+	width: 150px;
+	height: 70px;
+	background-image: url('../images/logo2.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-color: green;*/
+}
+
+.cover-form{
+	width: 100%;
+	/*padding: 0 2%;*/
+}
+
+.container-bg{
+	height: 500px;
+	background-image: url('../images/bg-form.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.form-container{
+	z-index: 2;
+	float: right;
+	margin-right: 40px;
+	width: 400px;
+	height: 105%;
+	position: relative;
+	top: -3%;
+	box-shadow: 2px 2px 2px 2px rgb(170, 170, 170);
+	background-color: white;
+	/*border: 3px solid rgb(97, 69, 66);*/
+}
+
+
+.form-container h2{
+	font-weight: normal;
+	padding: 25px 15px;
+	color: black;
+	font-size: 18px;
+	background-color: rgb(210, 210, 210);
+	text-align: center;
+}
+
+.form-container form{
+	margin-top: 9px;
+	padding: 20px;
+	
+}
+
+.form-container form p{
+	margin-top: 14px;
+	font-size: 20px;
+	color: #525252;
+}
+.form-wraper:not(:first-child){
+	margin-top: 20px;
+	/*aplicar mudança após o primeiro elemento*/
+}
+.form-wraper: last-child{
+	margin-top: 20px;
+}
+
+.form-container form input[type=text],[type=email],[type=tel]{
+	width: 100%;
+	height: 45px;
+	border: 1px solid #cccccc;
+	line-height: 45px;
+	/*distância entre as linhas*/
+	padding-left: 10px ;
+}
+
+.form-container form input[type=submit]{
+	background-color: rgb(191, 179, 181);
+	text-transform: uppercase;
+	/*deixar tudo maiusculo*/
+	color: white;
+	width: 100%;
+	font-size: 25px;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+section.chamada{
+	z-index: 1;
+	width: 100%;
+	position: relative;
+	top: calc(400px * 105%);
+	text-align: center;
+}
+
+.icone-seta{
+	position: absolute;
+	left: 50%;
+	top: -22%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-image: url('../images/arrow.png');
+}
+
+section.chamada .container{
+	padding: 50px 0;
+	background-color: #543b32;
+}
+
+section.chamada h2{
+	width: 96%;
+	max-width: 700px;
+	color: white;
+	font-size: 30px;
+	font-weight: normal;
+	display: inline-block;
+}
+
+section.chamada h3{
+	width: 96%;
+	max-width: 700px;
+	color: white;
+	font-size: 15px;
+	font-weight: normal;
+	display: inline-block;
+}
+
+.flex-mosaico{
+	display: flex;
+	}
+
+.item1-mosaico{
+	background-position: center;
+	background-size: cover;
+	width: 70%;
+	height: 300px;
+	}
+
+.item2-mosaico{
+	background-color: #E6D5B5;
+	padding: 40px;
+	width: 30%;
+	}
+footer{
+	text-align: center;
+	padding: 30px 0;
+	background-color: RGB(83, 59, 49);
+}
+
+footer img{
+	width: 120px;
+}
+
+footer p{
+	margin-top: 10px;
+	color: ghostwhite;
+}
+
+@media screen and (max-width:  768px){
+	.bg{
+		height: auto;
+		text-align: center;
+		padding: 40px 0;
+	}
+	.form-container{
+		height: auto;
+		top: 20px;
+		z-index: 2;
+		width: 96%;
+		max-width: 400px;
+		position: relative;
+		/*left: 2%;*/
+		display: inline-block;
+
+	}
+	section.chamada{
+		z-index: 1;
+	}
+
+	.flex-mosaico{
+		display: block;
+	}
+
+	.item1-mosaico{
+		padding-top: 80%;
+		width: 100%;
+		
+	}
+
+	.item2-mosaico{
+		height: auto;
+		width: auto;
+		text-align: justify;
+	}
+	
+}
+
+
+@media screen and (max-width:  510px){
+	header{
+		text-align: center;
+	}
+
+	.logo-1, .logo-2{
+		margin-top: 10px;
+		display: inline-block;
+		float: none;
+	}
+	.logo-2{
+		margin-left: 50px;
+	}
+
+}
+	
+
+	
