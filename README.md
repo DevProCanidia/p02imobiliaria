@@ -1,4 +1,5 @@
 # Real Estate Landing Page
+![projeto2](https://user-images.githubusercontent.com/89031935/182506001-70d29b0e-d81e-47c3-aae3-623268af1410.jpg)
 
 ## Introduction 🧑‍💻
 
