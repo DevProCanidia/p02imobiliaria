@@ -106,7 +106,7 @@ header{
 	margin-top: 20px;
 	/*aplicar mudança após o primeiro elemento*/
 }
-.form-wraper: last-child{
+.form-wraper:last-child{
 	margin-top: 20px;
 }
 
