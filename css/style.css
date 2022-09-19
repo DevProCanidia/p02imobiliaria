@@ -218,7 +218,7 @@ footer p{
 		width: 96%;
 		max-width: 400px;
 		position: relative;
-		/*left: 2%;*/
+		margin: 2%;
 		display: inline-block;
 
 	}
@@ -258,6 +258,7 @@ footer p{
 	.logo-2{
 		margin-left: 50px;
 	}
+
 
 }
 	
