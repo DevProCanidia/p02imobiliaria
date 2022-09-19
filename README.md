@@ -9,8 +9,6 @@
 * After following the steps I made some changes to the layout, added some elements.
 * Stacks Html and Css were used.
 
-Pending: 🚧
-Make the site responsive.
 
 Come and contribute to my project. 
 
